@@ -1,0 +1,31 @@
+<ion-modal-view>
+    <ion-header-bar class="bar-balanced" align-title="center">
+        <h1 class="title">Change Email Id</h1>
+        <div class="buttons button-right">
+            <button class="button button-clear" ng-click="closechngno();">Close</button>
+        </div>
+    </ion-header-bar>
+    <ion-content>
+        <div class="list">
+            <label class="item item-input">
+                <span class="input-label">Email Id</span>
+                <input type="email" value="sahil@gmail.com" disabled>
+            </label>
+            <label class="item item-input">
+                <span class="input-label">New Email Id</span>
+                <input type="email">
+            </label>
+            <label class="item item-input">
+                <span class="input-label">Confirm Email Id</span>
+                <input type="email">
+            </label>
+            <label class="item item-input">
+                <span class="input-label" required>Password</span>
+                <input type="password">
+            </label>
+        </div>
+        <div class="padding-horizontal">
+            <button class="button button-assertive button-block">Change Email Id</button>
+        </div>
+    </ion-content>
+</ion-modal-view>

@@ -1,0 +1,210 @@
+<ion-modal-view class="bg-filter">
+    <ion-header-bar class="bar-balanced" align-title="center">
+        <h1 class="title">Filter</h1>
+        <div class="buttons button-right">
+            <button class="button button-clear" ng-click="closefilter();">Close</button>
+        </div>
+    </ion-header-bar>
+
+    <div class="row filter-modal">
+        <div class="col col-50">
+            <ion-list>
+                <ion-item ng-click="tabvalue = 1;" ng-class="{'activetab': tabvalue == 1}">
+                        Appliance Status
+                </ion-item>
+                <ion-item ng-click="tabvalue = 2;" ng-class="{'activetab': tabvalue == 2}">
+                        Appliance Type
+                </ion-item>
+                <ion-item ng-click="tabvalue = 3;" ng-class="{'activetab': tabvalue == 3}">
+                        Location
+                </ion-item>
+                <ion-item ng-click="tabvalue = 4;" ng-class="{'activetab': tabvalue == 4}">
+                        Cover Status
+                </ion-item>
+                <ion-item ng-click="tabvalue = 5;" ng-class="{'activetab': tabvalue == 5}">                   
+                        Cover Type
+                </ion-item>
+            </ion-list>
+        </div>
+        <div class="col right">
+            <div class="bar item-input-inset search-app">
+                <label class="item-input-wrapper">
+                    <i class="icon ion-ios-search placeholder-icon"></i>
+                    <input type="search" placeholder="Search">
+                </label>
+            </div>
+            <ion-list>
+                <ion-item class="item item-checkbox">
+                    <label class="checkbox">
+                        <input type="checkbox">
+
+                    </label>
+                </ion-item>
+                <ion-item>
+                    <label>
+                        <input type="checkbox"> Active
+                    </label>
+                </ion-item>
+                <ion-item>
+                    <label>
+                        <input type="checkbox"> Archived
+                    </label>
+                </ion-item>
+                <ion-item>
+                    <label>
+                        <input type="checkbox"> Transfered
+                    </label>
+                </ion-item>
+            </ion-list>
+        </div>
+
+        <div class="col right" ng-if="tabvalue == 2">
+            <div class="bar item-input-inset search-app">
+                <label class="item-input-wrapper">
+                    <i class="icon ion-ios-search placeholder-icon"></i>
+                    <input type="search" placeholder="Search">
+                </label>
+            </div>
+            <ion-list>
+                <ion-item class="item item-checkbox">
+                    <label class="checkbox">
+                        <input type="checkbox">
+
+                    </label>
+                </ion-item>
+                <ion-item>
+                    <label>
+                        <input type="checkbox"> Air Conditioner
+                    </label>
+                </ion-item>
+                <ion-item>
+                    <label>
+                        <input type="checkbox"> Air Cooler
+                    </label>
+                </ion-item>
+                <ion-item>
+                    <label>
+                        <input type="checkbox"> Audio System
+                    </label>
+                </ion-item>
+                <ion-item>
+                    <label>
+                        <input type="checkbox"> Bluetooth Headphone
+                    </label>
+                </ion-item>
+                <ion-item>
+                    <label>
+                        <input type="checkbox"> Blu-ray Player
+                    </label>
+                </ion-item>
+            </ion-list>
+        </div>
+
+        <div class="col right" ng-if="tabvalue == 3">
+            <div class="bar item-input-inset search-app">
+                <label class="item-input-wrapper">
+                    <i class="icon ion-ios-search placeholder-icon"></i>
+                    <input type="search" placeholder="Search">
+                </label>
+            </div>
+            <ion-list>
+                <ion-item class="item item-checkbox">
+                    <label class="checkbox">
+                        <input type="checkbox">
+
+                    </label>
+                </ion-item>
+                <ion-item>
+                    <label>
+                        <input type="checkbox"> My Office
+                    </label>
+                </ion-item>
+                <ion-item>
+                    <label>
+                        <input type="checkbox"> My Home
+                    </label>
+                </ion-item>
+            </ion-list>
+        </div>
+
+        <div class="col right" ng-if="tabvalue == 4">
+            <div class="bar item-input-inset search-app">
+                <label class="item-input-wrapper">
+                    <i class="icon ion-ios-search placeholder-icon"></i>
+                    <input type="search" placeholder="Search">
+                </label>
+            </div>
+            <ion-list>
+                <ion-item class="item item-checkbox">
+                    <label class="checkbox">
+                        <input type="checkbox">
+
+                    </label>
+                </ion-item>
+                <ion-item>
+                    <label>
+                        <input type="checkbox"> Covered
+                    </label>
+                </ion-item>
+                <ion-item>
+                    <label>
+                        <input type="checkbox"> Near Expiry
+                    </label>
+                </ion-item>
+                <ion-item>
+                    <label>
+                        <input type="checkbox"> Expired
+                    </label>
+                </ion-item>
+                <ion-item>
+                    <label>
+                        <input type="checkbox"> No Details
+                    </label>
+                </ion-item>
+            </ion-list>
+        </div>
+
+        <div class="col right" ng-if="tabvalue == 5">
+            <div class="bar item-input-inset search-app">
+                <label class="item-input-wrapper">
+                    <i class="icon ion-ios-search placeholder-icon"></i>
+                    <input type="search" placeholder="Search">
+                </label>
+            </div>
+            <ion-list>
+                <ion-item class="item item-checkbox">
+                    <label class="checkbox">
+                        <input type="checkbox">
+
+                    </label>
+                </ion-item>
+                <ion-item>
+                    <label>
+                        <input type="checkbox"> Warranty
+                    </label>
+                </ion-item>
+                <ion-item>
+                    <label>
+                        <input type="checkbox"> Extented Warranty
+                    </label>
+                </ion-item>
+                <ion-item>
+                    <label>
+                        <input type="checkbox"> AMC
+                    </label>
+                </ion-item>
+                <ion-item>
+                    <label>
+                        <input type="checkbox"> Component Warranty
+                    </label>
+                </ion-item>
+            </ion-list>
+        </div>
+
+        <div class="button-bar bottom-stick">
+            <button class="button button-balanced button-block button-small">Clear</button>
+            <button class="button button-balanced button-block button-small">Apply</button>
+        </div>
+    </div>
+
+</ion-modal-view>

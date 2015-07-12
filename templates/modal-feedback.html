@@ -1,0 +1,28 @@
+<ion-modal-view>
+    <ion-header-bar class="bar-balanced" align-title="center">
+        <h1 class="title">Feedback</h1>
+        <div class="buttons button-right">
+            <button class="button button-clear" ng-click="closefeedback();">Close</button>
+        </div>
+    </ion-header-bar>
+    <ion-content>
+        <div class="list">
+            <label class="item item-input">
+                <span class="input-label">Email Id</span>
+                <input type="text" value="applions@gmail.com" disabled>
+            </label>
+            <label class="item item-input">
+                <span class="input-label">Name</span>
+                <input type="text">
+            </label>
+            <label class="item item-input">
+                <span class="input-label">Feedback</span>
+                <textarea>
+                </textarea>
+            </label>
+        </div>
+        <div class="padding-horizontal">
+            <button class="button button-assertive button-block">Submit</button>
+        </div>
+    </ion-content>
+</ion-modal-view>

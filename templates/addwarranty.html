@@ -1,0 +1,82 @@
+<ion-modal-view>
+    <ion-header-bar class="bar-balanced bar-header" align-title="center">
+        <h1 class="title">Additional Warranty / AMC</h1>
+        <div class="buttons">
+            <button class="button button-clear" ng-click="closeModal()">Skip</button>
+        </div>
+    </ion-header-bar>
+    <ion-content>
+        <div class="list">
+            <label class="item item-input item-select">
+                <div class="input-label">
+                    Cover Type*
+                </div>
+                <select>
+                    <option></option>
+                    <option>AMC</option>
+                    <option>Extended Warranty</option>
+                    <option>Component Warranty</option>
+                </select>
+            </label>
+            <label class="item item-input">
+                <span class="input-label">Start Date*</span>
+                <input type="date" required>
+            </label>
+            <label class="item item-input">
+                <span class="input-label">Cover Period*</span>
+                <input type="text" required>
+            </label>
+            <div class="item item-divider">
+                Cover Includes
+            </div>
+            <ion-item>
+                <label class="checkboxs pad-btm">
+                    <input type="checkbox"> Visit Fees
+                </label>
+                <label class="checkboxs pad-btm">
+                    <input type="checkbox"> Services
+                </label>
+
+                <label class="checkboxs">
+                    <input type="checkbox"> Parts
+                </label>
+                <label class="checkboxs">
+                    <input type="checkbox"> Others
+                </label>
+            </ion-item>
+            <!--
+            <label class="item item-input item-select">
+                <div class="input-label">
+                    Cover Includes
+                </div>
+                <select>
+                    <option></option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                </select>
+            </label>
+-->
+            <label class="item item-input">
+                <span class="input-label">Bill No From</span>
+                <input type="text" placeholder="Bill No">
+            </label>
+            <label class="item item-input">
+                <span class="input-label">Purchased From</span>
+                <input type="text" placeholder="Cover Purchased From">
+            </label>
+            <label class="item item-input">
+                <span class="input-label">Contact No.</span>
+                <input type="tel" placeholder="Contact No. of Seller">
+            </label>
+            <label class="item item-input">
+                <span class="input-label">Purchase Price</span>
+                <input type="text" placeholder="Purchase Price">
+            </label>
+        </div>
+        <div class="padding-horizontal">
+            <!--            <button class="button button-balanced button-block button-outline">Save &#38; Add More</button>-->
+            <button class="button button-balanced button-block button-outline">Save &#38; Exit</button>
+        </div>
+    </ion-content>
